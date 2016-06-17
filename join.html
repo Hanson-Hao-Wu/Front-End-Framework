@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Join</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+	<style>
+        body {
+            padding-top: 50px;
+            color: #5a5a5a;
+        }
+        footer{
+        	height: 50px;
+        	padding: 15px 0;
+        }
+        /* for form body and form aside */
+        .form_body,.form_aside{
+        	display: inline-block;
+        }
+        .form_body{
+        	width:75%;
+        }
+        .form_aside{
+        	width:24%;
+        }
+        .container {
+			width: auto;
+		}
+        .highlight {
+			background-color: #f7f7f9;
+			border: 1px solid #e1e1e8;
+			border-radius: 4px;
+			margin-bottom: 14px;
+			padding: 14px 0;
+		}
+		select.form-control,{
+			width:95%;
+			display: inline-block;
+		}
+		span.glyphicon-asterisk{
+			color: red;
+		}
+		.from-space .col-sm-6, .from-space .col-sm-12{
+			margin-bottom: 10px;
+		}
+		.add-assoc button{
+			width: 100%;
+		}
+		@media (min-width: 1170px) {
+			.nl-content{
+	        	margin: 0 auto;
+   				width: 1200px;
+	        }
+		}
+		@media (min-width: 768px) {
+		}
+		@media (max-width: 1170px) {
+			.form_body{
+        		width:100%
+	        }
+	        .form_aside{
+	        	display: none;
+	        }
+		}
+		@media (max-width: 970px) {
+		}
+		@media (max-width: 768px) {
+		}
+		
+	</style>
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">dropdown</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Bootstrap</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#ad-carousel">Summary</a></li>
+                <li><a href="#summary-container">Information</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Featrue <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#feature-tab" data-tab="tab-chrome">Chrome</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-firefox">Firefox</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-safari">Safari</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-opera">Opera</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-ie">IE</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="modal" data-target="#about-modal">About</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="nl-content">
+	<div class="form_body">
+		<div class="container">
+			<nav>
+				<ul class="pagination pagination-lg">
+					<li>
+						<span>Step</span>
+					</li>
+					<li class="disabled">
+						<span><span aria-hidden="true">«</span></span>
+					</li>
+					<li class="active">
+						<span>1 <span class="sr-only">(current)</span></span>
+					</li>
+					<li>
+						<span><a href="#">2</a></span>
+					</li>
+					<li>
+						<span><a href="#">3</a></span>
+					</li>
+					<li>
+						<a href="#" aria-label="Next"><span aria-hidden="true">»</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="container">
+			<h1>Join AAA</h1>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+					This Membership is for me
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+					This is a gift
+				</label>
+			</div>
+		</div>
+		<div class="container">
+			<form class="form-horizontal">
+				<div class="row">
+					<div class="highlight clearfix">
+						<div class="col-sm-12">
+						<div class="checkbox">
+						  	<label>
+								<input type="checkbox" value="">
+								I need roadside assistance now.
+								<a href="#">Learn more</a>
+							</label>
+						</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="highlight clearfix">
+						<div class="col-sm-6">
+							<div class="input-group">
+								<select class="form-control">
+									<option>plus</option>
+									<option>plus2</option>
+									<option>plus3</option>
+									<option>plus4</option>
+								</select>
+								<div class="input-group-addon">
+									<span class="glyphicon glyphicon-asterisk"></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 clearfix">
+							<label  class="control-label">
+								<a href="#">Learn about Membership Levels</a>
+							</label>
+						</div>
+						<div class="col-sm-12">
+						<p>Your AAA Membership is valid immediately upon completion of this enrollment process. AAA Plus, AAA Premier, and AAA RV roadside benefits begin 7 days after joining or upgrading.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row from-space">
+					<div class="col-sm-6">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="First Name">
+							<div class="input-group-addon">
+								<span class="glyphicon glyphicon-asterisk"></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Last Name">
+							<div class="input-group-addon">
+								<span class="glyphicon glyphicon-asterisk"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row from-space">
+					<div class="col-sm-12">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Street Address 1">
+							<div class="input-group-addon">
+								<span class="glyphicon glyphicon-asterisk"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row from-space">
+					<div class="col-sm-12">
+						<input type="text" class="form-control" placeholder="Street Address 2">
+					</div>
+				</div>
+
+				<!-- duplicated -->
+				<div class="row from-space">
+					<div class="col-sm-6">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="City/Town">
+							<div class="input-group-addon">
+								<span class="glyphicon glyphicon-asterisk"></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="State">
+							<div class="input-group-addon">
+								<span class="glyphicon glyphicon-asterisk"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row from-space">
+					<div class="col-sm-6">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Zip Code">
+							<div class="input-group-addon">
+								<span class="glyphicon glyphicon-asterisk"></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Email">
+							<div class="input-group-addon">
+								<span class="glyphicon glyphicon-asterisk"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row from-space">
+					<div class="col-sm-6">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Phone">
+							<div class="input-group-addon">
+								<span class="glyphicon glyphicon-asterisk"></span>
+							</div>
+						</div>
+					</div>
+				</div>			
+				<!-- /duplicated -->
+
+				<div class="row from-space add-assoc">
+					<div class="col-sm-6 col-sm-offset-6">
+						<button type="button" class="btn btn-primary">Add Another Member</button>
+					</div>
+				</div>
+				<div class="row from-space">
+					<div class="col-sm-6 col-sm-offset-6">
+						<button type="button" class="btn btn-primary pull-right">NEXT</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="form_aside">
+		<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">Shopping Cart </h3>
+		</div>
+		<div class="panel-body">
+			<table class="table table-condensed">
+				<thead>
+					<tr>
+						<td colspan="2"><label>Shopping Cart</label></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Plus membership</td>
+						<td>$90.00</td>
+					</tr>
+					<tr>
+						<td>Entrance Fee</td>
+						<td>$15.00</td>
+					</tr>
+					<tr>
+						<td>Entrance Fee Discount </td>
+						<td>-$15.00</td>
+					</tr>
+					<tr>
+						<td><label>Total</label> </td>
+						<td><label>$90.00</label></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+
+<footer>
+	<div class="container">
+		<p class="pull-right">
+			<a href="#top">To Top</a>
+		</p>
+		<p>© 2016 Newland Group</p>
+	</div>
+</footer>
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
