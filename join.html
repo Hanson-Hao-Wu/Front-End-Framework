@@ -37,7 +37,9 @@ footer {
 }
 
 .form_aside {
-	width: 24%;
+    width: 24%;
+    margin-top: 225px;
+    float: right;
 }
 
 .container {
@@ -99,8 +101,7 @@ span.glyphicon-asterisk {
 </head>
 <body>
 
-	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation"
-		id="menu-nav">
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -132,37 +133,42 @@ span.glyphicon-asterisk {
 	<div class="nl-content">
 		<div class="form_body">
 			<div class="container">
-				<nav>
-					<ul class="pagination pagination-lg">
-						<li><span>Step</span></li>
-						<li class="disabled"><span><span aria-hidden="true">«</span></span>
-						</li>
-						<li class="active"><span>1 <span class="sr-only">(current)</span></span>
-						</li>
-						<li><span><a href="#">2</a></span></li>
-						<li><span><a href="#">3</a></span></li>
-						<li><a href="#" aria-label="Next">
-							<span aria-hidden="true">»</span></a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<div class="container">
-				<h1>Join AAA</h1>
-				<div class="radio">
-					<label> <input type="radio" name="optionsRadios"
-						id="optionsRadios1" value="option1" checked> This
-						Membership is for me
-					</label>
+				<div class="row">
+					<nav>
+						<ul class="pagination pagination-lg">
+							<li><span>Step</span></li>
+							<li class="disabled"><span><span aria-hidden="true">«</span></span>
+							</li>
+							<li class="active"><span>1 <span class="sr-only">(current)</span></span>
+							</li>
+							<li><span><a href="#">2</a></span></li>
+							<li><span><a href="#">3</a></span></li>
+							<li><a href="#" aria-label="Next">
+								<span aria-hidden="true">»</span></a>
+							</li>
+						</ul>
+					</nav>
 				</div>
-				<div class="radio">
-					<label> <input type="radio" name="optionsRadios"
-						id="optionsRadios2" value="option2"> This is a gift
-					</label>
+				<div class="row">
+					<h1>Join AAA</h1>
 				</div>
-			</div>
-			<div class="container">
-				<form class="form-horizontal">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="radio">
+							<label> <input type="radio" name="optionsRadios"
+								id="optionsRadios1" value="option1" checked> This
+								Membership is for me
+							</label>
+						</div>
+						<div class="radio">
+							<label> <input type="radio" name="optionsRadios"
+								id="optionsRadios2" value="option2"> This is a gift
+							</label>
+						</div>
+					</div>
+				</div>
+				<form class="row form-horizontal">
+				<div class="container">
 					<div class="row">
 						<div class="highlight clearfix">
 							<div class="col-sm-12">
@@ -298,6 +304,7 @@ span.glyphicon-asterisk {
 							<button type="button" class="btn btn-primary pull-right">NEXT</button>
 						</div>
 					</div>
+				</div>
 				</form>
 			</div>
 		</div>
