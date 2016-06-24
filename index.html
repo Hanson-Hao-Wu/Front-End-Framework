@@ -11,110 +11,13 @@
 
 <!-- Font Awesome -->
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/myaccount.css">
 
-<style>
-body {
-	padding-top: 50px;
-	color: #5a5a5a;
-}
-
-footer {
-	height: 50px;
-	margin-top: 50px;
-	padding: 15px 0;
-	background-color: #222;
-    border-color: #080808;
-}
-/* for form body and form aside */
-.form_body, .form_aside {
-	display: inline-block;
-}
-.glyphicon.glyphicon-asterisk{
-	font-size: 12px;
-}
-.form_body {
-	width: 75%;
-}
-
-.form_aside {
-	width: 24%;
-}
-
-.container {
-	width: auto;
-}
-
-.input-group-addon{
-	background-color:transparent;
-	/* border:1px solid transparent; */
-}
-
-
-
-.highlight {
-	background-color: #f7f7f9;
-	border: 1px solid #e1e1e8;
-	border-radius: 4px;
-	margin-bottom: 14px;
-	padding: 14px 0;
-}
-
-span.glyphicon-asterisk {
-	color: red;
-}
-
-.from-space .col-sm-6, .from-space .col-sm-12 {
-	margin-bottom: 10px;
-}
-
-/* RMA */
-.rma-links{
-    margin: 20px 0;
-}
-
-.rma-links button{
-	font-size: 1.3em;
-}
-
-.btn-myaccount{
-	width:100%;
-}
-
-.btn-danger {
-    margin-top: 15px;
-}
-
-@media ( min-width : 1170px) {
-	.nl-content {
-		margin: 0 auto;
-		width: 1200px;
-	}
-}
-
-@media ( min-width : 768px) {
-}
-
-@media ( max-width : 1170px) {
-	.form_body {
-		width: 100%
-	}
-	.form_aside {
-		display: none;
-	}
-}
-
-@media ( max-width : 970px) {
-
-}
-
-@media ( max-width : 768px) {
-}
-</style>
 </head>
 <body>
-
-	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation"
-		id="menu-nav">
+	
+	<!-- nav -->
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -122,12 +25,12 @@ span.glyphicon-asterisk {
 					<span class="sr-only">dropdown</span> <span class="icon-bar"></span>
 					<span class="icon-bar"></span> <span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Bootstrap</a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#ad-carousel">Summary</a></li>
-					<li><a href="#summary-container">Information</a></li>
+					<li class="active"><a href="#ad-carousel">Newland</a></li>
+					<li><a href="#summary-container">Myaccount</a></li>
+					<li><a href="#summary-container">Join</a></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown">Featrue <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
@@ -142,10 +45,12 @@ span.glyphicon-asterisk {
 			</div>
 		</div>
 	</div>
+	<!-- /nav -->
 
 	<div class="nl-content">
 		<div class="form_body">
 			<div class="container">
+				<!-- title -->
 				<div class="row">
 					<div class="col-sm-12">
 						<h1>My Account</h1>
@@ -153,136 +58,160 @@ span.glyphicon-asterisk {
 				</div>
 				<div class="row">
 					<div class="col-sm-6">
-						<h3>Welcome, Hao</h3>
+						<h3 style="margin:5px 0 20px;">Welcome, Hao</h3>
 					</div>
 					<div class="col-sm-6">
-						<button type="button" class="btn btn-danger pull-right">Logout</button>
+						<button type="button" class="btn btn-danger logout">Logout</button>
 					</div>
 				</div>
+				<!-- Breadcrumbs -->
 				<div class="row">
 					<ol class="breadcrumb">
-						<li><a href="#">My Account</a></li>
-						<li><a href="#">Gift Management</a></li>
+						<li><a href="/myaccount/">My Account</a></li>
 					</ol>
 				</div>
-				<div class="row">
-					<div class="highlight clearfix">
+				<div class="highlight clearfix">
+					<div class="row">
 						<div class="col-sm-12">
 							<label>Quick Links</label>
 						</div>
 						<div class="col-sm-12">
-							<div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
+							<div class="btn-group btn-group-justified" role="group"
+								aria-label="Justified button group">
 								<div class="btn-group" role="group">
-									<button type="button" class="btn btn-default">Upgrade</button>
+									<a href="/myaccount/upgrade.jsp" class="btn btn-default">Upgrade</a>
 								</div>
 								<div class="btn-group" role="group">
-									<button type="button" class="btn btn-default">Downgrade</button>
+									<a href="/myaccount/addAssociate.jsp" class="btn btn-default">Downgrade</a>
 								</div>
 								<div class="btn-group" role="group">
-									<button type="button" class="btn btn-default">Add Associate</button>
+									<a href="/myaccount/addAssociate.jsp" class="btn btn-default">Add Associate</a>
 								</div>
 								<div class="btn-group" role="group">
-									<button type="button" class="btn btn-default">Remove Associate</button>
+									<a href="/myaccount/addAssociate.jsp" class="btn btn-default">Remove Associate</a>
 								</div>
 								<div class="btn-group" role="group">
-									<button type="button" class="btn btn-default">Change Password</button>
+									<a href="/myaccount/changePassword.jsp" class="btn btn-default">Change Password</a>
 								</div>
 								<div class="btn-group" role="group">
-									<button type="button" class="btn btn-default">Right</button>
+									<a href="/myaccount/addAssociate.jsp" class="btn btn-default">Cancel</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-6 rma-links">
-						<button type="button" class="btn btn-primary btn-myaccount">
-							<i class="fa fa-user" aria-hidden="true"></i> Primary Member Information
-						</button>
+				<div class="row  rma-links">
+					<div class="col-sm-6">
+						<a href="/myaccount/primaryMember.jsp" class="btn btn-primary btn-myaccount">
+							<i class="fa fa-user" aria-hidden="true"></i>
+							Primary Member Information
+						</a>
 					</div>
-					<div class="col-sm-6 rma-links">
-						<button type="button" class="btn btn-primary btn-myaccount">
+					<div class="col-sm-6">
+						<a class="btn btn-primary btn-myaccount">
 							<i class="fa fa-usd" aria-hidden="true"></i> CAA Rewards
-						</button>
+						</a>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-6 rma-links">
-						<button type="button" class="btn btn-primary btn-myaccount">
-							<i class="fa fa-group" aria-hidden="true"></i> Associate Member(s) Information
-						</button>
+				<div class="row rma-links">
+					<div class="col-sm-6">
+						<a class="btn btn-primary btn-myaccount">
+							<i class="fa fa-group" aria-hidden="true"></i> Associate
+							Member(s) Information
+						</a>
 					</div>
-					<div class="col-sm-6 rma-links">
-						<button type="button" class="btn btn-primary btn-myaccount">
-							<i class="fa fa-envelope" aria-hidden="true"></i> Email Preference
-						</button>
+					<div class="col-sm-6">
+						<a href="/myaccount/emailPreferences.jsp" class="btn btn-primary btn-myaccount">
+							<i class="fa fa-envelope" aria-hidden="true"></i> Email
+							Preference
+						</a>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-6 rma-links">
-						<button type="button" class="btn btn-primary btn-myaccount">
+				<div class="row rma-links">
+					<div class="col-sm-6">
+						<a class="btn btn-primary btn-myaccount">
 							<i class="fa fa-refresh" aria-hidden="true"></i> Auto-Renew
-						</button>
+						</a>
 					</div>
-					<div class="col-sm-6 rma-links">
-						<button type="button" class="btn btn-primary btn-myaccount">
-							<i class="fa fa-truck" aria-hidden="true"></i> Roadside Assistance Call
-						</button>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-6 rma-links">
-						<button type="button" class="btn btn-primary btn-myaccount">
-							<i class="fa fa-credit-card" aria-hidden="true"></i> Membership Level
-						</button>
-					</div>
-					<div class="col-sm-6 rma-links">
-						<button type="button" class="btn btn-primary btn-myaccount">
-							<i class="fa fa-car" aria-hidden="true"></i> Roadside Assistance History
-						</button>
+					<div class="col-sm-6">
+						<a class="btn btn-primary btn-myaccount">
+							<i class="fa fa-truck" aria-hidden="true"></i> Roadside
+							Assistance Call
+						</a>
 					</div>
 				</div>
-			</div><!-- container -->
-		</div><!-- form_body -->
+				<div class="row rma-links">
+					<div class="col-sm-6">
+						<a class="btn btn-primary btn-myaccount">
+							<i class="fa fa-credit-card" aria-hidden="true"></i> Membership
+							Level
+						</a>
+					</div>
+					<div class="col-sm-6">
+						<a class="btn btn-primary btn-myaccount">
+							<i class="fa fa-car" aria-hidden="true"></i>
+							Roadside Assistance History
+						</a>
+					</div>
+				</div>
+				<div class="row rma-links">
+					<div class="col-sm-6">
+						<a href="/myaccount/giftManagement.jsp" class="btn btn-primary btn-myaccount">
+							<i class="fa fa-gift" aria-hidden="true"></i>
+							Gift Management
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- form_body -->
 
+		
 		<div class="form_aside">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
-					<h3 class="panel-title">Shopping Cart</h3>
+					<h3 class="panel-title">Have A Question?</h3>
 				</div>
 				<div class="panel-body">
-					<table class="table table-condensed">
-						<thead>
-							<tr>
-								<td colspan="2"><label>Shopping Cart</label></td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Plus membership</td>
-								<td>$90.00</td>
-							</tr>
-							<tr>
-								<td>Entrance Fee</td>
-								<td>$15.00</td>
-							</tr>
-							<tr>
-								<td>Entrance Fee Discount</td>
-								<td>-$15.00</td>
-							</tr>
-							<tr>
-								<td><label>Total</label></td>
-								<td><label>$90.00</label></td>
-							</tr>
-						</tbody>
-					</table>
+					<ul class="list-group">
+						<li class="text-right list-group-item list-group-item-info">
+							<a href="#">
+								<i class="fa fa-comment"></i>
+								<span>Live Chat</span>
+							</a>
+						</li>
+						<li class="text-right list-group-item">
+							<span>(800) 836-2582</span>
+						</li>
+						<li class="text-right list-group-item">
+							<span>Send Us an Email</span>
+						</li>
+						<li class="text-right list-group-item list-group-item-info">
+							<a href="#">
+								<i class="fa fa-map-marker"></i>
+								<span>Find a Branch Near You</span>
+							</a>
+						</li>
+						<li class="text-right list-group-item">
+							<p>AAA Penfield</p>
+							<p>2156 Penfield Road</p>
+							<p>Penfield NY 14526</p>
+						</li>
+						<li class="text-right list-group-item list-group-item-info">
+							<a href="#">
+								<i class="fa fa-credit-card"></i>
+								<span>Find a Branch Near You</span>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</div><!-- form_aside -->
+		</div>
+		<!-- form_aside -->
+
 	</div>
-
-
-
+	
 	<footer>
 		<div class="container">
 			<p class="pull-right">
